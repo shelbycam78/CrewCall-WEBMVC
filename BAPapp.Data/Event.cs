@@ -24,7 +24,7 @@ namespace theBAPapp.Data
         public string VenueId { get; set; }
 
         [Required]
-        [ForeignKey("Crewer")]
+        //[ForeignKey(CrewerId)]
         [Display(Name = "Crewer")]
         public string CrewerId { get; set; }
         public string Position { get; set; }
