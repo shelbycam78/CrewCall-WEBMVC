@@ -20,8 +20,8 @@ namespace BAPapp.Data
         [Required]
         public string Location { get; set; }
         
-        [ForeignKey("Crewer")]
-        public string CrewerId { get; set; }
+        //[ForeignKey("Crewer")]
+        public Guid CrewerId { get; set; }
         public string PointOfContact { get; set; }
     }
 }

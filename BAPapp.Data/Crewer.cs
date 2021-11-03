@@ -12,7 +12,7 @@ namespace BAPapp.Data
     {
         [Key]
         [Required]
-        public string CrewerId { get; set; }
+        public Guid CrewerId { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -21,10 +21,10 @@ namespace BAPapp.Data
 
         public string Phone { get; set; }
 
-        [ForeignKey("Venue")]
+        //[ForeignKey("Venue")]
         public string VenueId { get; set; }
 
-        [ForeignKey("Event")]
+        //[ForeignKey("Event")]
         public string EventId { get; set; }
 
     }

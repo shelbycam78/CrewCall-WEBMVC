@@ -21,12 +21,12 @@ namespace theBAPapp.Data
 
         [Required]
         [Display(Name = "Venue")]
-        public string VenueId { get; set; }
+        public Guid VenueId { get; set; }
 
         [Required]
-        //[ForeignKey(CrewerId)]
+        // [ForeignKey("CrewerId")]
         [Display(Name = "Crewer")]
-        public string CrewerId { get; set; }
+        public Guid CrewerId { get; set; }
         public string Position { get; set; }
         public string Director { get; set; }
         public string Producer { get; set; }
