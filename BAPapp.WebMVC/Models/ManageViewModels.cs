@@ -72,7 +72,7 @@ namespace BAPapp.WebMVC.Models
         [Display(Name = "Code")]
         public string Code { get; set; }
 
-        [Required].
+        [Required]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
     }

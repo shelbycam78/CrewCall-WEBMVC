@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace theBAPapp.Data
+namespace BAPapp.WebMVC.Models
 {
-    public class Event
+    public class EventCreate
     {
-        [Key]
         [Required]
-        [Display(Name = "Invoice Number")]
         public Guid EventId { get; set; }
         public DateTime EventDate { get; set; }
 
@@ -35,14 +31,10 @@ namespace theBAPapp.Data
         [Display(Name = "Have you been paid?")]
         public bool IsPaid { get; set; }
 
-        [Display (Name = "Did they take out taxes?")]
+        [Display(Name = "Did they take out taxes?")]
         public bool IsTaxed { get; set; }
 
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
-
-        //public Category EventType { get; set; }
-
-
     }
 }
