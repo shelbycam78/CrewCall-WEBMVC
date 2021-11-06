@@ -2,7 +2,7 @@ namespace BAPapp.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class EventClassUpdated : DbMigration
     {
         public override void Up()
@@ -12,7 +12,7 @@ namespace BAPapp.Data.Migrations
             DropColumn("dbo.Event", "Date");
             DropColumn("dbo.Event", "Name");
         }
-        
+
         public override void Down()
         {
             AddColumn("dbo.Event", "Name", c => c.String(nullable: false));

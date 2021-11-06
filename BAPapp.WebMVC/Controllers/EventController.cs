@@ -14,7 +14,10 @@ namespace BAPapp.WebMVC.Controllers
         // GET: Event
         public ActionResult Index()
         {
-            var model = new EventListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new EventService*(userId);
+            var model = service.GetEvents();
+
             return View(model);
         }
         //Get method
@@ -22,15 +25,22 @@ namespace BAPapp.WebMVC.Controllers
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(EventCreate model)
         {
             if (ModelState.IsValid)
             {
-
+                return View(model);
             }
-            return View(model);
+
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new EventService(userId);
+
+            service.CreateEvent(model);
+
+            return RedirectToAction("Index");
         }
     }
 }

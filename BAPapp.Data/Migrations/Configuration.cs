@@ -5,14 +5,14 @@ namespace BAPapp.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<theBAPapp.Data.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<BAPapp.Data.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(theBAPapp.Data.ApplicationDbContext context)
+        protected override void Seed(BAPapp.Data.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace theBAPapp.Data
+namespace BAPapp.Data
 {
     public class Event
     {
@@ -35,7 +35,7 @@ namespace theBAPapp.Data
         [Display(Name = "Have you been paid?")]
         public bool IsPaid { get; set; }
 
-        [Display (Name = "Did they take out taxes?")]
+        [Display(Name = "Did they take out taxes?")]
         public bool IsTaxed { get; set; }
 
         [Display(Name = "Paid via direct deposit?")]

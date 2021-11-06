@@ -10,9 +10,8 @@ namespace BAPapp.Models
     public class EventListItem
     {
         public int EventId { get; set; }
+        public DateTime EventDate { get; set; }
         public string EventTitle { get; set; }
 
-        [Display(Name = "Created")]
-        public DateTimeOffset CreatedUtc { get; set; }
     }
 }
