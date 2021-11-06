@@ -22,10 +22,10 @@ namespace BAPapp.Data
         public string Phone { get; set; }
 
         //[ForeignKey("Venue")]
-        public string VenueId { get; set; }
+        //public string VenueId { get; set; }
 
         //[ForeignKey("Event")]
-        public string EventId { get; set; }
+        //public string EventId { get; set; }
 
     }
 }

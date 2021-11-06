@@ -15,10 +15,10 @@ namespace BAPapp.Data
         public string VenueId { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string VenueName { get; set; }
         
         [Required]
-        public string Location { get; set; }
+        public string VenueLocation { get; set; }
         
         //[ForeignKey("Crewer")]
         public Guid CrewerId { get; set; }

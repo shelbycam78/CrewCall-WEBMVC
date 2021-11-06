@@ -14,10 +14,10 @@ namespace theBAPapp.Data
         [Required]
         [Display(Name = "Event Id")]
         public Guid EventId { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime EventDate { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string EventTitle { get; set; }
 
         [Required]
         [Display(Name = "Venue")]
