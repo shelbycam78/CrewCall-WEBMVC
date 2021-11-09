@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BAPapp.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAPapp.Data
+namespace BAPapp.Models
 {
-    public class Venue
+    public class VenueCreate
     {
         [Key]
         [Required]
@@ -17,7 +18,6 @@ namespace BAPapp.Data
         [Required]
         [Display(Name = "Venue")]
         public string VenueName { get; set; }
-
 
         [Required]
         [Display(Name = "Address")]

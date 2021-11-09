@@ -13,20 +13,27 @@ namespace BAPapp.Data
         [Key]
         [Required]
         [Display(Name = "Invoice Number")]
-        public Guid EventId { get; set; }
+        public string EventId { get; set; }
+       
+        [Display(Name = "Event Date")]
         public DateTime EventDate { get; set; }
 
         [Required]
+        [Display(Name = "Event Title")]
         public string EventTitle { get; set; }
 
         [Required]
+        [ForeignKey(nameof(Venue))]
         [Display(Name = "Venue")]
-        public Guid VenueId { get; set; }
+        public string VenueId { get; set; }
+        public virtual Venue Venue { get; set; }
 
         [Required]
-        // [ForeignKey("CrewerId")]
+        [ForeignKey(nameof(CrewerId))]
         [Display(Name = "Crewer")]
-        public Guid CrewerId { get; set; }
+        public string CrewerId { get; set; }
+        public virtual Crewer Crewer { get; set; }
+
         public string Position { get; set; }
         public string Director { get; set; }
         public string Producer { get; set; }

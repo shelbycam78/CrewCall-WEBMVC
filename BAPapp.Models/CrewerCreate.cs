@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BAPapp.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAPapp.Data
+namespace BAPapp.Models
 {
-    public class Crewer
+    public class CrewerCreate
     {
         [Key]
         [Required]
@@ -32,7 +33,5 @@ namespace BAPapp.Data
         [Display(Name = "Event")]
         public string EventId { get; set; }
         public virtual Event Event { get; set; }
-
-
     }
 }

@@ -11,56 +11,56 @@ namespace BAPapp.Services
 {
     public class EventService
     {
-        private readonly Guid _userId;
-        
-        public EventService(Guid userId)
-        {
-            _userId = userId;
-        }
-        
+        private readonly ApplicationDbContext _context = new ApplicationDbContext();
+
+        //Create
         public bool CreateEvent(EventCreate model)
         {
-            var entity =
-                new Event()
-                {
-                    EventId = _userId,
-                    EventDate = model.EventDate,
-                    EventTitle = model.EventTitle,
-                    VenueId = model.VenueId,
-                    CrewerId = model.CrewerId,
-                    Position = model.Position,
-                    Director = model.Director,
-                    Producer = model.Producer,
-                    IsPaid = model.IsPaid,
-                    IsTaxed = model.IsTaxed,
-                    IsDirectDeposit = model.IsDirectDeposit
-                };
-            using (var ctx = new ApplicationDbContext())
+            Event entity = new Event
             {
-                ctx.Events.Add(entity);
-                return ctx.SaveChanges() == 1;
+                EventDate = model.EventDate,
+                EventTitle = model.EventTitle,
+                VenueId = model.VenueId,
+                CrewerId = model.CrewerId,
+                Position = model.Position,
+                Director = model.Director,
+                Producer = model.Producer,
+                IsPaid = model.IsPaid,
+                IsTaxed = model.IsTaxed,
+                IsDirectDeposit = model.IsDirectDeposit
+            };
 
-            }
+            _context.Events.Add(entity);
+            return _context.SaveChanges() == 1;
         }
-        public IEnumerable<EventListItem> GetEvents()
+        //Get All
+
+        public List<EventDetail> GetAllEvents()
         {
-            using (var ctx = new ApplicationDbContext())
+            var eventEntities = _context.Events.ToList();
+            var eventList = eventEntities.Select(e => new EventDetail
             {
-                var query =
-                        ctx
-                            .Events
-                            .Where(e => e.EventId == _userId)
-                            .Select(
-                                e =>
-                                    new EventListItem
-                                    {
-                                        EventId = e.EventId,
-                                        EventDate = e.EventDate,
-                                        EventTitle = e.EventTitle,
-                                    }
-                            );
-                return query.ToArray();
-            }
+                EventId = e.EventId,
+                EventDate = e.EventDate,
+                EventTitle = e.EventTitle,
+            }).ToList();
+            return eventList;
+        }
+
+        //Get (Details by ID)
+        public EventDetail GetEventByDate(DateTime eventDate)
+        {
+            var eventEntity = _context.Events.Find(eventDate);
+            if (eventEntity == null)
+                return null;
+            
+            var eventDetail = new EventDetail
+            {
+                EventId = eventEntity.EventId,
+                EventDate = eventEntity.EventDate,
+                EventTitle = eventEntity.EventTitle,
+            };
+            return eventDetail;
         }
     }
 }

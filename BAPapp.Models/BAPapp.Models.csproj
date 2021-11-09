@@ -54,12 +54,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventListItem.cs" />
+    <Compile Include="CrewerCreate.cs" />
+    <Compile Include="CrewerDetail.cs" />
+    <Compile Include="EventCreate.cs" />
+    <Compile Include="EventDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VenueCreate.cs" />
+    <Compile Include="VenueDetail.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAPapp.Data\BAPapp.Data.csproj">
+      <Project>{CCE8E48F-32DD-416E-ADD6-6FBE3B22AF96}</Project>
+      <Name>BAPapp.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
