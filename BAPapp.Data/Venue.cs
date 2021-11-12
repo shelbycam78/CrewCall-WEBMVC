@@ -24,10 +24,10 @@ namespace BAPapp.Data
         public string VenueLocation { get; set; }
 
 
-        [ForeignKey(nameof(Crewer))]
-        [Display(Name = "Crewer")]
-        public string CrewerId { get; set; }
-        public virtual Crewer Crewer { get; set; }
+        public ICollection<Crewer> Crewers { get; set; }
+
+        public ICollection<Event> Events { get; set; }
+
 
         [Display(Name = "Point of Contact")]
         public string PointOfContact { get; set; }

@@ -22,16 +22,11 @@ namespace BAPapp.Data
         public string Phone { get; set; }
 
 
-        [ForeignKey(nameof(Venue))]
-        [Display(Name = "Venue")]
-        public string VenueId { get; set; }
-        public virtual Venue Venue { get; set; }
+        public virtual ICollection<Venue> Venues { get; set; }
+
+        public virtual ICollection<Event> Events { get; set; }
 
 
-        [ForeignKey(nameof(Event))]
-        [Display(Name = "Event")]
-        public string EventId { get; set; }
-        public virtual Event Event { get; set; }
 
 
     }

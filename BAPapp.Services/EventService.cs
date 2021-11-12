@@ -18,6 +18,7 @@ namespace BAPapp.Services
         {
             Event entity = new Event
             {
+                
                 EventDate = model.EventDate,
                 EventTitle = model.EventTitle,
                 VenueId = model.VenueId,
@@ -40,7 +41,6 @@ namespace BAPapp.Services
             var eventEntities = _context.Events.ToList();
             var eventList = eventEntities.Select(e => new EventDetail
             {
-                EventId = e.EventId,
                 EventDate = e.EventDate,
                 EventTitle = e.EventTitle,
             }).ToList();
@@ -56,7 +56,6 @@ namespace BAPapp.Services
             
             var eventDetail = new EventDetail
             {
-                EventId = eventEntity.EventId,
                 EventDate = eventEntity.EventDate,
                 EventTitle = eventEntity.EventTitle,
             };

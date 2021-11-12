@@ -14,6 +14,7 @@ namespace BAPapp.Data
         [Required]
         [Display(Name = "Invoice Number")]
         public string EventId { get; set; }
+        
        
         [Display(Name = "Event Date")]
         public DateTime EventDate { get; set; }
@@ -29,7 +30,7 @@ namespace BAPapp.Data
         public virtual Venue Venue { get; set; }
 
         [Required]
-        [ForeignKey(nameof(CrewerId))]
+        [ForeignKey(nameof(Crewer))]
         [Display(Name = "Crewer")]
         public string CrewerId { get; set; }
         public virtual Crewer Crewer { get; set; }

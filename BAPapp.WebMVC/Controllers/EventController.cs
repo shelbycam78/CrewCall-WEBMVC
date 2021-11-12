@@ -27,7 +27,7 @@ namespace BAPapp.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(EventCreate model)
         {
-           
+            return View(model);
         }
     }
 }
