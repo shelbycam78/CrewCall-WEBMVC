@@ -58,6 +58,7 @@
     <Compile Include="CrewerDetail.cs" />
     <Compile Include="EventCreate.cs" />
     <Compile Include="EventDetail.cs" />
+    <Compile Include="EventListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VenueCreate.cs" />
     <Compile Include="VenueDetail.cs" />

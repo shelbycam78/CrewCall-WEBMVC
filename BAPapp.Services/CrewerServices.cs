@@ -21,8 +21,7 @@ namespace BAPapp.Services
                 Name = model.Name,
                 Email = model.Email,
                 Phone = model.Phone,
-                VenueId = model.VenueId,
-                EventId = model.EventId
+                
             };
             _context.Crewers.Add(entity);
             return _context.SaveChanges() == 1;
@@ -37,8 +36,7 @@ namespace BAPapp.Services
                 Name = c.Name,
                 Email = c.Email,
                 Phone = c.Phone,
-                VenueId = c.VenueId,
-                EventId = c.EventId,
+                
             }).ToList();
             return crewerList;
         }
@@ -55,8 +53,7 @@ namespace BAPapp.Services
                 Name = crewerEntity.Name,
                 Email = crewerEntity.Email,
                 Phone = crewerEntity.Phone,
-                VenueId = crewerEntity.VenueId,
-                EventId = crewerEntity.EventId
+                
             };
             return crewerDetail;
         

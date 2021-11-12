@@ -14,7 +14,7 @@ namespace BAPapp.WebMVC.Controllers
         // GET: Event
         public ActionResult Index()
         {
-            var model = new EventDetail[0];
+            var model = new EventListItem[0];
             return View(model);
         }
         //Get method
