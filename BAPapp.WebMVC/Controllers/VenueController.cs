@@ -19,7 +19,7 @@ namespace BAPapp.WebMVC.Controllers
             ICollection<Venue> venuesList = _db.Venues.ToList();
             ICollection<Venue> orderedList = venuesList.OrderBy(ven => ven.VenueName).ToList();
             return View(orderedList);
-        }
+           }
 
         public ActionResult Create()
         {
