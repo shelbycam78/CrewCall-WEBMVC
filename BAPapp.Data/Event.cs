@@ -27,14 +27,12 @@ namespace BAPapp.Data
         [ForeignKey(nameof(Venue))]
         [Display(Name = "Venue")]
         public string VenueId { get; set; }
-        public virtual Venue Venue { get; set; }
 
         [Required]
         [ForeignKey(nameof(Crewer))]
         [Display(Name = "Crewer")]
         public string CrewerId { get; set; }
-        public virtual Crewer Crewer { get; set; }
-
+     
         public string Position { get; set; }
         public string Director { get; set; }
         public string Producer { get; set; }
@@ -48,6 +46,10 @@ namespace BAPapp.Data
 
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
+
+
+        public virtual Venue Venue { get; set; }
+        public virtual Crewer Crewer { get; set; }
 
         //public Category EventType { get; set; }
 

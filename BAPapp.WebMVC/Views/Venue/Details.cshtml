@@ -1,0 +1,42 @@
+﻿@model BAPapp.Data.Venue
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Venue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VenueName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VenueName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VenueLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VenueLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointOfContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointOfContact)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VenueId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
