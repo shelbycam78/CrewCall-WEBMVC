@@ -242,10 +242,12 @@
     <Content Include="Views\Venue\Create.cshtml" />
     <Content Include="Views\Venue\Index.cshtml" />
     <Content Include="Views\Venue\Delete.cshtml" />
+    <Content Include="Views\Crewer\Create.cshtml" />
+    <Content Include="Views\Crewer\Delete.cshtml" />
+    <Content Include="Views\Crewer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Crewer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

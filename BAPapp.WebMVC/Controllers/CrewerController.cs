@@ -18,7 +18,7 @@ namespace BAPapp.WebMVC.Controllers
         {
             ICollection<Crewer> crewersList = _db.Crewers.ToList();
             ICollection<Crewer> orderedList = crewersList.OrderBy(crew=>crew.Name).ToList();
-            return View();
+            return View(orderedList);
         }
 
         public ActionResult Create()
