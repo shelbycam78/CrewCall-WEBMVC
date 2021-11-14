@@ -237,8 +237,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Event\Index.cshtml" />
-    <Content Include="Views\Event\Create.cshtml" />
     <Content Include="Views\Venue\Create.cshtml" />
     <Content Include="Views\Venue\Index.cshtml" />
     <Content Include="Views\Venue\Delete.cshtml" />
@@ -247,6 +245,12 @@
     <Content Include="Views\Crewer\Index.cshtml" />
     <Content Include="Views\Venue\Edit.cshtml" />
     <Content Include="Views\Venue\Details.cshtml" />
+    <Content Include="Views\Event\Index.cshtml" />
+    <Content Include="Views\Event\Create.cshtml" />
+    <Content Include="Views\Event\Details.cshtml" />
+    <Content Include="Views\Event\Edit.cshtml" />
+    <Content Include="Views\Event\Delete.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

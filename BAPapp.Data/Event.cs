@@ -10,6 +10,8 @@ namespace BAPapp.Data
 {
     public class Event
     {
+        public Guid OwnerId { get; set; }
+
         [Key]
         [Required]
         [Display(Name = "Invoice Number")]

@@ -69,6 +69,14 @@
     <Compile Include="Migrations\202111120033337_ForeignKeysFixedThanksCasey.Designer.cs">
       <DependentUpon>202111120033337_ForeignKeysFixedThanksCasey.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111131927592_morehelp.cs" />
+    <Compile Include="Migrations\202111131927592_morehelp.Designer.cs">
+      <DependentUpon>202111131927592_morehelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111132026228_eventEverythingStartedOver.cs" />
+    <Compile Include="Migrations\202111132026228_eventEverythingStartedOver.Designer.cs">
+      <DependentUpon>202111132026228_eventEverythingStartedOver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Venue.cs" />
@@ -86,6 +94,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111120033337_ForeignKeysFixedThanksCasey.resx">
       <DependentUpon>202111120033337_ForeignKeysFixedThanksCasey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111131927592_morehelp.resx">
+      <DependentUpon>202111131927592_morehelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111132026228_eventEverythingStartedOver.resx">
+      <DependentUpon>202111132026228_eventEverythingStartedOver.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

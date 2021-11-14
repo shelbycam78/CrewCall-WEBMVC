@@ -20,7 +20,6 @@ namespace BAPapp.Data
             return userIdentity;
         }
     }
-
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -62,6 +61,6 @@ namespace BAPapp.Data
             {
                 HasKey(iur => iur.UserId);
             }
-        }
+        }      
     }
 }

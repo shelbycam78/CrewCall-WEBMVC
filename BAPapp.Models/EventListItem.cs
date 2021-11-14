@@ -9,10 +9,9 @@ namespace BAPapp.Models
 {
     public class EventListItem
     {
-        [Required]
+        public string EventId { get; set; }
         public DateTime EventDate { get; set; }
-
-        [Required]
+         
         public string EventTitle { get; set; }
         
     }
