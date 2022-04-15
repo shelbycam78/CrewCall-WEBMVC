@@ -1,0 +1,16 @@
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\CrewCall.Data.dll.config
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\CrewCall.Data.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\CrewCall.Data.pdb
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\EntityFramework.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\EntityFramework.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.csproj.CoreCompileInputs.cache
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.csproj.CopyComplete
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.pdb
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.csproj.AssemblyReference.cache
