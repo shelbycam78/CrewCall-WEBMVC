@@ -14,7 +14,7 @@ namespace CrewCall.WebMVC.Controllers
         // GET: Event
         public ActionResult Index()
         {
-            return View(CreateEventService() .GetEventList());
+            return View(CreateEventService().GetEventList());
         }
 
         public ActionResult Create()
@@ -41,7 +41,7 @@ namespace CrewCall.WebMVC.Controllers
         }
 
         public ActionResult Details(int eventId)
-        { 
+        {
             var event = CreateEventService().GetEventDetailsById(eventId);
             return View(event);
 
@@ -64,33 +64,32 @@ namespace CrewCall.WebMVC.Controllers
         });
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int eventId, EventEdit model)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public ActionResult Edit(int eventId, EventEdit model)
+    {
+        if (!ModelState.IsValid) return View(model);
+
+        if (model.EventId != eventId)
         {
-            if (!ModelState.IsValid) return View(model);
-
-            if (model.EventId != eventId)
-            {
-                ModelState.AddModelError("", "Id mismatch");
-                return View(model);
-            }
-
-            if (CreateEventService().UpdateEvent(model))
-            {
-                TempData["SaveResult"] = "Event updated";
-                return RedirectToAction("Index");
-            }
-
-            ModelState.AddModelError("", "Error editing event");
+            ModelState.AddModelError("", "Id mismatch");
             return View(model);
         }
 
-        private EventService CreateEventService()
+        if (CreateEventService().UpdateEvent(model))
         {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new EventService(userId);
-            return service;
+            TempData["SaveResult"] = "Event updated";
+            return RedirectToAction("Index");
         }
+
+        ModelState.AddModelError("", "Error editing event");
+        return View(model);
+    }
+
+    private EventService CreateEventService()
+    {
+        var userId = Guid.Parse(User.Identity.GetUserId());
+        var service = new EventService(userId);
+        return service;
     }
 }

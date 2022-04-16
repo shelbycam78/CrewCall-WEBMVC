@@ -19,23 +19,7 @@ namespace CrewCall.Services
 
         public EventDetail GetEventDetailsById(int EventId)
         {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var event = ctx.Events.Single(e => e.EventId) == EventId);
-                return new EventDetail
-                {
-                    EventId = event.EventId,
-                    EventDate = event.EventDate,
-                    EventTitle = event.EventTitle,
-                    VenueId = event.VenueId,
-                    ClientId = event.ClientId,
-                    IsPaid = event.IsPaid,
-                    IsTaxed = event.IsTaxed,
-                    IsDirectDeposit = event.IsDirectDeposit,
-                    EventType = event.EventType
-                };
-
-            }
+            
         }
 
         public bool CreateEvent(EventCreate model)

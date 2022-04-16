@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace CrewCall.Data
 {
-    //public enum EventType { Sports, Concert, Graduation, Corporate, Other }
+    public enum EventType { Sports, Concert, Graduation, Corporate, Other }
+
     public class Event
     {
-    public enum EventType { Sports, Concert, Graduation, Corporate, Other }
-        public Guid OwnerId { get; set; }
+    
+        public Guid UserId { get; set; }
 
         [Key]
         [Required]
@@ -51,7 +52,7 @@ namespace CrewCall.Data
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
 
-        public EventType EventType { get; set; }
+        public EventType Category { get; }
 
         // public virtual Venue Venue { get; set; }
         // public virtual Client Client { get; set; }

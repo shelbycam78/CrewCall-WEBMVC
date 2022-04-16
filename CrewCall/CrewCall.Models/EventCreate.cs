@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static CrewCall.Data.Event;
 
 namespace CrewCall.Models
 {
@@ -44,7 +45,7 @@ namespace CrewCall.Models
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
 
-        public EventType EventType { get; set; }
+        public EventType Category { get; set; }
 
 
         public virtual Venue Venue { get; set; }
