@@ -33,9 +33,11 @@ namespace CrewCall.Data
             return new ApplicationDbContext();
         }
 
-        public DbSet<Client> Clients { get; set; }
         public DbSet<Event> Events { get; set; }
+        public DbSet<Client> Clients { get; set; }
         public DbSet<Venue> Venues { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

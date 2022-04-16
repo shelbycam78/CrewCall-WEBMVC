@@ -21,11 +21,5 @@ namespace CrewCall.Data
         public string Phone { get; set; }
         public string Company { get; set; }
 
-
-        // public virtual ICollection<Venue> Venues { get; set; }
-
-        // public virtual ICollection<Event> Events { get; set; }
-
-
     }
 }
