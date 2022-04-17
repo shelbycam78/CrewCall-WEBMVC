@@ -20,27 +20,37 @@ namespace CrewCall.Data
         [Display(Name = "Invoice Number")]
         public int EventId { get; set; }
 
+        
+        [Required]
+        [ForeignKey(nameof(Venue))]
+        [Display(Name = "Venue")]
+        public int VenueId { get; set; }
+        public virtual Venue Venue { get; set; }
 
+
+        [Required]
+        [ForeignKey(nameof(Client))]
+        [Display(Name = "Client")]
+        public int ClientId { get; set; }
+        public virtual Client Client { get; set; }
+
+
+        [Required]
+        [ForeignKey (nameof(Contact))]
+        [Display(Name = "Contact")]
+        public int ContactId { get; set; }
+        public virtual Contact Contact { get; set; }
+
+
+        [Required]
         [Display(Name = "Date")]
         public DateTime EventDate { get; set; }
 
         [Required]
         [Display(Name = "Title")]
         public string EventTitle { get; set; }
-         
-        [Required]
-        [ForeignKey(nameof(VenueId))]
-        [Display(Name = "Venue")]
-        public int VenueId { get; set; }
 
-        [Required]
-        [ForeignKey(nameof(ClientId))]
-        [Display(Name = "Client")]
-        public int ClientId { get; set; }
-
-        // public string Position { get; set; }
-        // public string Director { get; set; }
-        // public string Producer { get; set; }
+        public EventType Category { get; }
 
         [Required]
         [Display(Name = "Have you been paid?")]
@@ -52,11 +62,12 @@ namespace CrewCall.Data
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
 
-        public EventType Category { get; }
+        
 
-        // public virtual Venue Venue { get; set; }
-        // public virtual Client Client { get; set; }
 
+        // public string Position { get; set; }
+        // public string Director { get; set; }
+        // public string Producer { get; set; }
     }
 }
 

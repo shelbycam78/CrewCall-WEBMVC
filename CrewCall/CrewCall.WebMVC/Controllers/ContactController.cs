@@ -1,9 +1,11 @@
-﻿using CrewCall.Models;
+﻿using CrewCall.Data;
+using CrewCall.Models;
 using CrewCall.Services;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -81,7 +83,23 @@ namespace CrewCall.WebMVC.Controllers
                 return View(model);
           }
 
-          private ContactService CreateContactService()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int clientId)
+        {
+            if (clientId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Client clientId = clientId.Clients.Find((int)clientId);
+            if (clientId == null)
+            {
+                return HttpNotFound();
+            }
+            return View(clientId);
+        }
+
+        private ContactService CreateContactService()
           {
           var userId = Guid.Parse(User.Identity.GetUserId());
           var service = new ContactService(userId);

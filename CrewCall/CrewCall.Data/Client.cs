@@ -17,14 +17,15 @@ namespace CrewCall.Data
         [Required]
         public string Company { get; set; }
 
+
         [Required]
-        [ForeignKey(nameof(ContactId))]
+        [ForeignKey(nameof(Contact))]
         public int ContactId{ get; set; }
+        public virtual Contact Contact { get; set; }
 
 
+        public virtual ICollection<Event> Events { get; set; } = new List<Event>();
 
-        public virtual Contact Contact {get;set;}
-        // public virtual ICollection<Event> Events { get; set; }
 
 
     }
