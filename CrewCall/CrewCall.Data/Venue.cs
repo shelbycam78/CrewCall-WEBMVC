@@ -22,6 +22,7 @@ namespace CrewCall.Data
         [Display(Name = "Location")]
         public string VenueLocation { get; set; }
 
+
         public virtual ICollection<Event> Events { get; set; } = new List<Event>();
 
     }

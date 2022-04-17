@@ -19,3 +19,16 @@ C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Deb
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\obj\Debug\CrewCall.Services.csproj.AssemblyReference.cache
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\obj\Debug\CrewCall.Services.csproj.CopyComplete
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.Helpers.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.Mvc.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.Razor.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.WebPages.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.Helpers.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.Mvc.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.Razor.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.WebPages.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Services\bin\Debug\System.Web.WebPages.Razor.xml
