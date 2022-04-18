@@ -8,11 +8,9 @@ namespace CrewCall.Models
 {
     public class ClientEdit
     {
-        public int VenueId { get; set; }
+        public int ClientId { get; set; }
 
         public string Company { get; set; }
-
-        public int ContactId { get; set; }
 
     }
 }

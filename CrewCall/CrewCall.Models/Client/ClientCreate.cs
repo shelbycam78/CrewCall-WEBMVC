@@ -16,8 +16,7 @@ namespace CrewCall.Models
         [Required]
         public string Company { get; set; }
        
-        [Required]
-        public int ContactId { get; set; }
+        
 
     }
 }

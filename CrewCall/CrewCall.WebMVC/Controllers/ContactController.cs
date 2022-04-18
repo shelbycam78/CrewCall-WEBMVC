@@ -83,22 +83,7 @@ namespace CrewCall.WebMVC.Controllers
                 return View(model);
           }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int clientId)
-        {
-            if (clientId == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Client clientId = clientId.Clients.Find((int)clientId);
-            if (clientId == null)
-            {
-                return HttpNotFound();
-            }
-            return View(clientId);
-        }
-
+        
         private ContactService CreateContactService()
           {
           var userId = Guid.Parse(User.Identity.GetUserId());

@@ -10,8 +10,7 @@ namespace CrewCall.Models
     {
         public int ClientId { get; set; }
         public string Company { get; set; }
-        public int ContactId { get; set; }
-
+      
     }
 
 }

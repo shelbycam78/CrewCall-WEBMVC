@@ -16,6 +16,7 @@ namespace CrewCall.Data
         [Required]
         public string Name { get; set; }
         
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         public string Phone { get; set; }
@@ -23,7 +24,7 @@ namespace CrewCall.Data
 
 
         public virtual ICollection<Event> Events { get; set; } = new List<Event>();
-        public virtual ICollection<Client> Clients { get; set; } = new List<Client>();
+        
 
 
     }

@@ -86,7 +86,7 @@ namespace CrewCall.WebMVC.Controllers
     //    return View(model);
     //}
 
-    //private EventService CreateEventService()
+    //public EventService CreateEventService()
     //{
     //    var userId = Guid.Parse(User.Identity.GetUserId());
     //    var service = new EventService(userId);

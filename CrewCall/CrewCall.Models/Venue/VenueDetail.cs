@@ -9,14 +9,14 @@ namespace CrewCall.Models
 {
     public class VenueDetail
     {
-        [Required]
+
         public int VenueId { get; set; }
 
-        [Required]
+
         [Display(Name = "Venue")]
         public string VenueName { get; set; }
 
-        [Required]
+
         [Display(Name = "Location")]
         public string VenueLocation { get; set; }
     }

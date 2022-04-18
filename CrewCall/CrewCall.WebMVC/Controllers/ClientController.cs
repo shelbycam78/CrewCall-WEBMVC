@@ -55,9 +55,9 @@ namespace CrewCall.WebMVC.Controllers
             var client = CreateClientService().GetClientDetailsById(clientId);
             return View(new ClientEdit
             {
-                VenueId = client.ClientId,
+                ClientId = client.ClientId,
                 Company = client.Company,
-                ContactId = client.ContactId
+                
             });
         }
 
@@ -67,7 +67,7 @@ namespace CrewCall.WebMVC.Controllers
         {
             if (!ModelState.IsValid) return View(model);
 
-            if (model.VenueId != clientId)
+            if (model.ClientId != clientId)
             {
                 ModelState.AddModelError("", "Id mismatch");
                 return View(model);

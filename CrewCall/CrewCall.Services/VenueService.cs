@@ -11,7 +11,7 @@ namespace CrewCall.Services
 {
     public class VenueService
     {
-
+        private readonly ApplicationDbContext _context = new ApplicationDbContext();
         private readonly Guid _userId;
 
         public VenueService(Guid userId)
@@ -19,65 +19,59 @@ namespace CrewCall.Services
             _userId = userId;
         }
 
-        public VenueDetail GetVenueDetailsById(int VenueId)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var venue = ctx.Venues.Single(v => v.VenueId == VenueId);
-                return new VenueDetail
-                {
-                    VenueId = venue.VenueId,
-                    VenueName = venue.VenueName,
-                    VenueLocation = venue.VenueLocation
-                };
-            }
-        }
-
         public bool CreateVenue(VenueCreate model)
         {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var newVenue = new Venue()
-                {
-                    VenueId = model.VenueId,
-                    VenueName = model.VenueName,
-                    VenueLocation = model.VenueLocation
-                };
 
-                ctx.Venues.Add(newVenue);
-                return ctx.SaveChanges() == 1;
-                           
-            }
-        
+            var newVenue = new Venue()
+            {
+                VenueId = model.VenueId,
+                VenueName = model.VenueName,
+                VenueLocation = model.VenueLocation
+            };
+
+            _context.Venues.Add(newVenue);
+            return _context.SaveChanges() == 1;
+
         }
 
         public IEnumerable<VenueListItem> GetVenueList()
         {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var query = ctx.Venues.Select(v => new VenueListItem
-                {
-                    VenueId = v.VenueId,
-                    VenueName = v.VenueName,
-                    VenueLocation = v.VenueLocation
-                });
 
-                return query.ToArray();
-            }
+            var query = _context.Venues.Select(v => new VenueListItem
+            {
+                VenueId = v.VenueId,
+                VenueName = v.VenueName,
+                VenueLocation = v.VenueLocation
+            });
+
+            return query.ToArray();
+
         }
+        public VenueDetail GetVenueDetailsById(int venueId)
+        {
+            var venue = _context.Venues.Find(venueId);
+            if (venue == null)
+                return null;
 
-        public bool UpdateVenue(VenueEdit model)
+            var detail = new VenueDetail
             {
-                using (var ctx = new ApplicationDbContext())
-                {
-                    var venue = ctx.Venues.Single(v => v.VenueId == model.VenueId);
-                    venue.VenueId = model.VenueId;
-                    venue.VenueName = model.VenueName;
-                    venue.VenueLocation = model.VenueLocation;
+                VenueId = venue.VenueId,
+                VenueName = venue.VenueName,
+                VenueLocation = venue.VenueLocation
+            };
+            return detail;
 
-                    return ctx.SaveChanges() == 1;
 
-                }
-            }
+        }
+        public bool UpdateVenue(VenueEdit model)
+        {
+            var venue = _context.Venues.Single(v => v.VenueId == model.VenueId);
+            venue.VenueId = model.VenueId;
+            venue.VenueName = model.VenueName;
+            venue.VenueLocation = model.VenueLocation;
+
+            return _context.SaveChanges() == 1;
+
         }
     }
+}

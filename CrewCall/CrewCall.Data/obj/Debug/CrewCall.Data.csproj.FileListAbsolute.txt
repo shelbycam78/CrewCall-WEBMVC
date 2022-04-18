@@ -13,4 +13,7 @@ C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\C
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.csproj.CopyComplete
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.dll
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.pdb
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.Migrations.InitialCreate.resources
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.csproj.GenerateResource.cache
+C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.Migrations.InitialMigration.resources
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Data\obj\Debug\CrewCall.Data.csproj.AssemblyReference.cache

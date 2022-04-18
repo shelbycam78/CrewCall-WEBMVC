@@ -14,6 +14,8 @@ namespace CrewCall.Models
         [Required]
         public string Name { get; set; }
 
+
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         public string Phone { get; set; }

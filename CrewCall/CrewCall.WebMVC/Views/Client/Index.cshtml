@@ -17,9 +17,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Company)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ContactId)
-        </th>
+        
         <th></th>
     </tr>
 
@@ -31,13 +29,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.Company)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ContactId)
-        </td>
+       
         <td>
             @Html.ActionLink("Edit", "Edit", new { clientId = item.ClientId }) |
             @Html.ActionLink("Details", "Details", new { clientId = item.ClientId }) |
-            @Html.ActionLink("Delete", "Delete", new { clientId = item.ClientId })
+
         </td>
     </tr>
 }

@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace CrewCall.Data
 {
-    public enum EventType { Sports, Concert, Graduation, Corporate, Other }
+    //public enum EventType { Sports, Concert, Graduation, Corporate, Other }
+
 
     public class Event
     {
-    
-        public Guid UserId { get; set; }
 
         [Key]
         [Required]
@@ -21,21 +20,18 @@ namespace CrewCall.Data
         public int EventId { get; set; }
 
         
-        [Required]
         [ForeignKey(nameof(Venue))]
         [Display(Name = "Venue")]
         public int VenueId { get; set; }
         public virtual Venue Venue { get; set; }
 
 
-        [Required]
         [ForeignKey(nameof(Client))]
         [Display(Name = "Client")]
         public int ClientId { get; set; }
         public virtual Client Client { get; set; }
 
 
-        [Required]
         [ForeignKey (nameof(Contact))]
         [Display(Name = "Contact")]
         public int ContactId { get; set; }
@@ -50,7 +46,7 @@ namespace CrewCall.Data
         [Display(Name = "Title")]
         public string EventTitle { get; set; }
 
-        public EventType Category { get; }
+        //public EventType TypeOfEvent { get; }
 
         [Required]
         [Display(Name = "Have you been paid?")]
@@ -63,8 +59,6 @@ namespace CrewCall.Data
         public bool IsDirectDeposit { get; set; }
 
         
-
-
         // public string Position { get; set; }
         // public string Director { get; set; }
         // public string Producer { get; set; }

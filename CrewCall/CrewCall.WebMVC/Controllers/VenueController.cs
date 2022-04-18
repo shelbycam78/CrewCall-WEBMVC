@@ -61,7 +61,7 @@ namespace CrewCall.WebMVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int venueId, ClientEdit model)
+        public ActionResult Edit(int venueId, VenueEdit model)
         {
             if (!ModelState.IsValid) return View(model);
 

@@ -10,8 +10,7 @@ namespace CrewCall.Models
     public class ContactDetail
     {
         public int ContactId { get; set; }
-
-        [Required]
+          
         public string Name { get; set; }
 
         public string Email { get; set; }

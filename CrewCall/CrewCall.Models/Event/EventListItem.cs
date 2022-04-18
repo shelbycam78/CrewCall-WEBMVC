@@ -12,8 +12,7 @@ namespace CrewCall.Models
 {
     public class EventListItem
     {
-        [Key]
-        [Required]
+
         [Display(Name = "Invoice Number")]
         public int EventId { get; set; }
 
@@ -21,21 +20,21 @@ namespace CrewCall.Models
         [Display(Name = "Date")]
         public DateTime EventDate { get; set; }
 
-        [Required]
         [Display(Name = "Title")]
         public string EventTitle { get; set; }
 
-        [Required]
-        [ForeignKey(nameof(VenueId))]
+
         [Display(Name = "Venue")]
         public int VenueId { get; set; }
 
-        [Required]
-        [ForeignKey(nameof(ClientId))]
+
         [Display(Name = "Client")]
         public int ClientId { get; set; }
-     
-        [Required]
+
+        [Display(Name = "Contact")]
+        public int ContactId { get; set; }
+
+
         [Display(Name = "Have you been paid?")]
         public bool IsPaid { get; set; }
 
@@ -45,14 +44,11 @@ namespace CrewCall.Models
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
 
-        public EventType Category { get; set; }
+        //public EventType TypeOfEvent { get; set; }
 
 
         // public string Position { get; set; }
         // public string Director { get; set; }
         // public string Producer { get; set; }
-
-        public virtual Venue Venue { get; set; }
-        public virtual Client Client { get; set; }
     }
 }

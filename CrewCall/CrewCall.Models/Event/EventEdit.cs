@@ -44,12 +44,7 @@ namespace CrewCall.Models
         [Display(Name = "Paid via direct deposit?")]
         public bool IsDirectDeposit { get; set; }
 
-        public EventType Catagory { get; set; }
-
-
-     public virtual Venue Venue { get; set; }
-     public virtual Client Client { get; set; }
-
+        //public EventType TypeOfEvent { get; set; }
 
         // public string Position { get; set; }
         // public string Director { get; set; }
