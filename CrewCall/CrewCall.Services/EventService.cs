@@ -57,25 +57,25 @@ namespace CrewCall.Services
             return query.ToArray();
         }
 
-        //public EventDetail GetEventDetailsById(int eventId)
-        //{
-        //    var event = _context.Events.Find(eventId);
-        //    if (event == null)
-        //    return null;
+        public EventDetail GetEventDetailsById(int eventId)
+        {
+            var event = _context.Events.Find(eventId);
+            if (int eventId == null)
+            return null;
 
-        //var detail = new EventDetail
-        //    {
-        //        EventId = event.EventId,
-        //        EventDate = event.EventDate,
-        //        EventTitle = event.EventTitle,
-        //        VenueId = event.VenueId,
-        //        ClientId = event.ClientId,
-        //        IsPaid = event.IsPaid,
-        //        IsTaxed = event.IsTaxed,
-        //        IsDirectDeposit = event.IsDirectDeposit,
-        //    };
-        //    return detail;
-        //}
+        var detail = new EventDetail
+            {
+                EventId = event.EventId,
+                EventDate = event.EventDate,
+                EventTitle = event.EventTitle,
+                VenueId = event.VenueId,
+                ClientId = event.ClientId,
+                IsPaid = event.IsPaid,
+                IsTaxed = event.IsTaxed,
+                IsDirectDeposit = event.IsDirectDeposit,
+            };
+            return detail;
+        }
 }
 }
 

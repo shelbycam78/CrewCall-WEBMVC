@@ -12,6 +12,13 @@ namespace CrewCall.WebMVC.Controllers
     public class VenueController : Controller
     {
 
+
+        private VenueService CreateVenueService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new VenueService(userId);
+            return service;
+        }
         //GET: Venue
         public ActionResult Index()
         {
@@ -81,12 +88,6 @@ namespace CrewCall.WebMVC.Controllers
             return View(model);
         }
 
-        private VenueService CreateVenueService()
-        {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new VenueService(userId);
-            return service;
-        }
 
     }
     

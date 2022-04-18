@@ -251,18 +251,19 @@
     <Content Include="Views\Client\Create.cshtml" />
     <Content Include="Views\Client\Details.cshtml" />
     <Content Include="Views\Client\Edit.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\Create.cshtml" />
+    <Content Include="Views\Contact\Details.cshtml" />
+    <Content Include="Views\Contact\Edit.cshtml" />
+    <Content Include="Views\Venue\Index.cshtml" />
     <Content Include="Views\Venue\Create.cshtml" />
     <Content Include="Views\Venue\Details.cshtml" />
     <Content Include="Views\Venue\Edit.cshtml" />
-    <Content Include="Views\Venue\Index.cshtml" />
-    <Content Include="Views\Contact\Edit.cshtml" />
-    <Content Include="Views\Contact\Create.cshtml" />
-    <Content Include="Views\Contact\Details.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Event\Index.cshtml" />
+    <Content Include="Views\Event\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Event\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

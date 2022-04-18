@@ -10,7 +10,6 @@ namespace CrewCall.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "CrewCall.Data.ApplicationDbContext";
         }
 
         protected override void Seed(CrewCall.Data.ApplicationDbContext context)

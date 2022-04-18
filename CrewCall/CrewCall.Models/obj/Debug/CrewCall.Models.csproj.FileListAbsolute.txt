@@ -14,3 +14,19 @@ C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Models\bin\Debug
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Models\bin\Debug\EntityFramework.xml
 C:\Users\shelb\Desktop\1150 projects\CrewCall\CrewCall\CrewCall.Models\obj\Debug\CrewCall.Models.csproj.CopyComplete
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\CrewCall.Models.dll
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\CrewCall.Models.pdb
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\CrewCall.Data.dll
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\EntityFramework.dll
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\CrewCall.Data.pdb
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\CrewCall.Data.dll.config
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\bin\Debug\EntityFramework.xml
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\obj\Debug\CrewCall.Models.csproj.AssemblyReference.cache
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\obj\Debug\CrewCall.Models.csproj.CoreCompileInputs.cache
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\obj\Debug\CrewCall.Models.csproj.CopyComplete
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\obj\Debug\CrewCall.Models.dll
+C:\Users\shelb\Source\Repos\shelbycam78\CrewCall-WEBMVC\CrewCall\CrewCall.Models\obj\Debug\CrewCall.Models.pdb
